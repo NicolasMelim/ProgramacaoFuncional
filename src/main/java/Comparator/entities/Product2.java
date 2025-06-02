@@ -1,10 +1,9 @@
 package Comparator.entities;
 
-public class Product {
+public class Product2 {
     private String name;
     private Double price;
-
-    public Product(String name, Double price) {
+    public Product2(String name, Double price) {
         this.name = name;
         this.price = price;
     }
@@ -27,7 +26,9 @@ public class Product {
 
     @Override
     public String toString() {
-        return "Produto: " +
-                getName() +" -> " + "Preço: " + String.format("%.2f", getPrice());
+        return "Product2{" +
+                "name='" + name + '\'' +
+                ", price=" + String.format("%.2f", getPrice()) +
+                '}';
     }
 }
